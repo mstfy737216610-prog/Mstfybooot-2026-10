@@ -3,6 +3,7 @@
 */
 
 var admin_id = "8338869162";
+var target_chat_id = (chat && chat.chatid) ? chat.chatid : user.telegramid;
 
 var text = "☑️ *- تستطيع شحن حسابك الآن عبر:*\n\n" +
   "💸 #إيداع_كريمي_وتحويل\n" +
@@ -13,15 +14,25 @@ var text = "☑️ *- تستطيع شحن حسابك الآن عبر:*\n\n" +
   "💸 #آسياسيل #زين_كاش\n\n" +
   "🥇 - للشحن تواصل مباشرة مع المالك أو الوكيل الرسمي للبوت ✅";
 
-var keyboard = {
-  inline_keyboard: [
-    [ { text: "💭 - تواصل بـ فريق الدعم ↖️", url: "tg://user?id=" + admin_id } ],
-    [ { text: "🎁 - الشحن عبر إدخال كرت شحن ☑️", callback_data: "Card" } ],
-    [ { text: "- رجوع 🔙", callback_data: "back" } ]
+var keyboard = [
+  [
+    { text: "💭 - تواصل بـ فريق الدعم ↖️", title: "💭 - تواصل بـ فريق الدعم ↖️", url: "tg://user?id=" + admin_id }
+  ],
+  [
+    { text: "🎁 - الشحن عبر إدخال كرت شحن ☑️", title: "🎁 - الشحن عبر إدخال كرت شحن ☑️", callback_data: "Card", command: "Card" }
+  ],
+  [
+    { text: "- رجوع 🔙", title: "- رجوع 🔙", callback_data: "back", command: "back" }
   ]
-};
+];
 
-Bot.sendMessage(text, {
-  parse_mode: "Markdown",
-  reply_markup: JSON.stringify(keyboard)
-});
+try {
+  Api.sendMessage({
+    chat_id: target_chat_id,
+    text: text,
+    parse_mode: "Markdown",
+    reply_markup: { inline_keyboard: keyboard }
+  });
+} catch(e) {
+  Bot.sendInlineKeyboard(keyboard, text);
+}

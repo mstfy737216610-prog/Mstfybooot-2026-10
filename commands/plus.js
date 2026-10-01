@@ -1,5 +1,5 @@
 /*
-  Command: back
+  Command: /plus
 */
 
 Bot.runCommand("/start");

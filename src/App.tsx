@@ -349,6 +349,105 @@ const DashboardHome = () => {
           </Link>
         </div>
       </div>
+
+      {/* Live Telegram Interface Mockup (Exact Replica from Screenshots) */}
+      <div className="bg-slate-900 rounded-[3rem] p-8 lg:p-12 text-white border border-slate-800 shadow-2xl space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+          <div>
+            <span className="text-[10px] font-black uppercase tracking-widest text-blue-400 block mb-1">المحاكاة المباشرة لأزرار التلجرام</span>
+            <h3 className="text-2xl font-black flex items-center gap-2">
+              <Smartphone className="text-blue-400" />
+              معاينة واجهة البوت الحية (مطابقة 100% للقطات الشاشة)
+            </h3>
+          </div>
+          <div className="flex items-center gap-2 text-xs font-bold bg-slate-800 p-1.5 rounded-xl border border-slate-700">
+            <span className="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse" />
+            <span>متوافق مع Telegram API & Bots.Business</span>
+          </div>
+        </div>
+
+        <div className="max-w-md mx-auto bg-[#182533] p-5 rounded-[2.5rem] border border-slate-700/60 shadow-inner font-sans text-right" dir="rtl">
+          {/* Telegram Chat Header */}
+          <div className="flex items-center gap-3 pb-4 mb-4 border-b border-slate-700/50">
+            <div className="w-10 h-10 rounded-full bg-teal-600 flex items-center justify-center font-black text-xs text-white">
+              PLUS
+            </div>
+            <div>
+              <p className="font-bold text-sm text-slate-100 leading-tight">╰•|_____(PLUS SMS)_____|•╯</p>
+              <p className="text-[10px] text-slate-400">3,232 users · bot</p>
+            </div>
+          </div>
+
+          {/* Telegram Bubble */}
+          <div className="bg-[#202f42] p-4 rounded-2xl border border-slate-700/40 text-xs space-y-3 mb-3 text-slate-200 leading-relaxed">
+            <p className="font-black text-sm text-amber-300">• القائمة الرئيسية 🏡</p>
+            <p className="font-bold text-sky-400">💙 مكتب الإبداع 💙</p>
+            <div className="py-1 space-y-1 font-mono">
+              <p><span className="text-purple-400 font-bold">🆔 :</span> 8338869162 •</p>
+              <p><span className="text-emerald-400 font-bold">💷 :</span> 10.5 ₽ •</p>
+            </div>
+            <div className="text-[11px] text-sky-300 space-y-1 pt-1 border-t border-slate-700/40">
+              <p>💙 قناة البوت 💙</p>
+              <p>💗 قناة التفعيلات 💗</p>
+              <p className="text-slate-300">🇸🇦🇮🇩🇻🇳🇾🇪 من الدول المتوفرة حالياً ــ</p>
+              <p className="text-slate-300">💡 شرح استخدام البوت ــ</p>
+            </div>
+            <p className="text-center font-mono text-[10px] text-slate-500 pt-1">╰•|_____(PLUS SMS)_____|•╯</p>
+          </div>
+
+          {/* Inline Buttons exactly matching screenshot */}
+          <div className="space-y-1.5 text-xs font-bold">
+            <button className="w-full py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+              ☎️ شراء رقم افتراضي
+            </button>
+            <div className="grid grid-cols-2 gap-1.5">
+              <button className="py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+                عروض Telegram
+              </button>
+              <button className="py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+                عروض WhatsApp
+              </button>
+            </div>
+            <button className="w-full py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+              السيرفرت الاكثر شراؤها
+            </button>
+            <div className="grid grid-cols-2 gap-1.5">
+              <button className="py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+                •🎲 الأكثر توفراً •
+              </button>
+              <button className="py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+                •🎳 أشحن رصيدك•
+              </button>
+            </div>
+            <button className="w-full py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+              •🔭 الرشـ%ـق وشحن الألعاب والبرامج •
+            </button>
+            <button className="w-full py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+              •💎 اربح روبل مجاناً ₽ •
+            </button>
+            <div className="grid grid-cols-2 gap-1.5">
+              <button className="py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+                • تحويل الرصيد 🔄 •
+              </button>
+              <button className="py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+                الدعم ⏰
+              </button>
+            </div>
+            <button className="w-full py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+              • تعليمات للاستخدام ✔️ •
+            </button>
+            <button className="w-full py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+              حسابي
+            </button>
+            <button className="w-full py-2.5 bg-[#2b3e55] hover:bg-[#344b66] text-white rounded-xl transition-colors">
+              •🛸 خدمات وميزات أخرى •
+            </button>
+            <button className="w-full py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-colors font-black border border-blue-400">
+              👑 لوحة تحكم الأدمن والمالك ⚙️
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
