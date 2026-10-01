@@ -1,11 +1,16 @@
-<div align="center">
+# دليل تشغيل بوت الأرقام الوهمية على Bots.Business
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## الميزات الجديدة:
+- **إصلاح الأزرار**: تم تصحيح لوحة المفاتيح لتتوافق مع معايير Telegram API الحديثة.
+- **الإدارة المركزية**: يمكنك التحكم بكل شيء من خلال البوت مباشرة.
+- **الأمان**: تم تحسين نظام التحقق (Captcha).
 
-  <h1>Built with AI Studio</h2>
+## معرف المالك:
+- المالك الأساسي: `8338869162`
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## طريقة المزامنة:
+1. ارفع الملفات إلى مستودع GitHub.
+2. استخدم خاصية `Git Sync` في منصة Bots.Business.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## ملاحظة:
+تم تعديل تنسيق لوحة المفاتيح ليستخدم `Bot.sendMessage` مع `JSON.stringify` لضمان ظهور الأزرار لجميع المستخدمين بدون استثناء.
